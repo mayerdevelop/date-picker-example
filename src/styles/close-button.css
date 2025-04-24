@@ -1,0 +1,6 @@
+.close-button {
+  &[type='button'],
+  &[type='reset'] {
+    @apply rounded-full bg-gray-100 p-1.5 text-lg outline-none hover:bg-gray-200 hover:text-gray-800;
+  }
+}

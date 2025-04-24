@@ -1,0 +1,43 @@
+.input {
+  @apply w-full appearance-none rounded-md border border-gs1-info-300 px-3 py-2 text-gs1-dark-gray-500 transition duration-150 ease-in-out focus-within:ring-1 focus:bg-transparent focus:outline-none focus:ring-1 read-only:focus:border-transparent read-only:focus:ring-0;
+
+  &::placeholder {
+    @apply text-gs1-gray-300;
+  }
+
+  &.input-invalid {
+    @apply border-error focus-within:border-error focus-within:bg-transparent focus-within:ring-1 focus-within:ring-error focus:bg-transparent focus:ring-1 focus:ring-error;
+  }
+
+  &.input-lg {
+    @apply text-lg;
+  }
+}
+
+.input-addon {
+  @apply flex items-center rounded-xl border border-gray-200 bg-gray-200 px-4;
+}
+
+.input-textarea {
+  min-height: 7rem;
+}
+
+.input-wrapper {
+  @apply relative flex w-full;
+}
+
+.input-disabled {
+  @apply !cursor-not-allowed opacity-60;
+}
+
+.input-suffix-start {
+  @apply absolute top-2/4 mx-5 -translate-y-2/4 transform ltr:left-2.5 rtl:right-2.5;
+}
+
+.input-suffix-end {
+  @apply absolute right-2.5 top-2/4 flex -translate-y-2/4 transform rtl:left-2.5;
+}
+
+.input-with-pl-4 {
+  @apply pl-4;
+}
